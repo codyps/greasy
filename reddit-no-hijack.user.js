@@ -6,7 +6,13 @@
 // @include        *://*.reddit.com/*
 // @grant          none
 // @namespace      https://github.com/jmesmon
+// @license        AGPL3
 // ==/UserScript==
+
+// TODO: consider if run-at document-start is useful, and how we can
+// effectively hook urls as they show up in that case (right now it doesn't
+// work).
+
 (function () {
   'use strict';
   function cl(ac) {

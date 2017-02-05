@@ -1,6 +1,7 @@
 Removes the redirects & beacons that reddit adds to their links.
 
-Unlike the reddit settings, this works even if you are logged out & means you don't need to trust those settings to work.
+This works even if you are logged out and doesn't require that you trust
+Reddit's settings to work while logged in.
 
 Compatible with RES "Never Ending Reddit" (newly loaded links are scrubbed too).
 
