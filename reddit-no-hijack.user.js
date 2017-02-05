@@ -6,6 +6,7 @@
 // @include        *://*.reddit.com/*
 // @grant          none
 // @namespace      https://github.com/jmesmon
+// @supportURL	   https://github.com/jmesmon/greasy/issues
 // ==/UserScript==
 (function () {
   'use strict';

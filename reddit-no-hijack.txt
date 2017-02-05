@@ -9,6 +9,6 @@ Supports
  - "inbound" and "outbound" tracking links/beacons
  - reddit-injected affiliate links (these appear to have been removed from reddit since the initial release)
 
-[Report an issue](https://github.com/jmesmon/greasy/issues/new)
+[Report an issue](https://github.com/jmesmon/greasy/issues)
 
 [Github Source](https://github.com/jmesmon/greasy)
