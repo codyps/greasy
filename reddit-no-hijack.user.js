@@ -7,6 +7,7 @@
 // @grant          none
 // @namespace      https://github.com/jmesmon
 // @license        AGPL3
+// @supportURL	   https://github.com/jmesmon/greasy/issues
 // ==/UserScript==
 
 // TODO: consider if run-at document-start is useful, and how we can
