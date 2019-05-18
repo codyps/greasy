@@ -8,6 +8,7 @@
 // @namespace      https://github.com/jmesmon
 // @license        AGPL3
 // @supportURL	   https://github.com/jmesmon/greasy/issues
+// @run-at         document-start
 // ==/UserScript==
 
 // TODO: consider if run-at document-start is useful, and how we can
@@ -76,7 +77,6 @@
     console.log('<<<');
   }
 
-  var tbls = document.querySelector('#siteTable');
   var obs = new MutationObserver(function (r, self) {
     for (var i = 0; i < r.length; i++) {
       var ad = r[i].addedNodes;
@@ -86,7 +86,7 @@
       }
     }
   });
-  obs.observe(tbls, {
+  obs.observe(document, {
     childList: true
   });
 
@@ -94,3 +94,4 @@
   // TODO: consider blocking the recent_srs cookie used for tracking
   cl(document);
 }) ();
+
