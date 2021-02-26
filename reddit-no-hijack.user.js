@@ -9,7 +9,6 @@
 // @license        AGPL3
 // @supportURL	   https://github.com/jmesmon/greasy/issues
 // @run-at         document-end
-// @version 0.0.1.20190518060813
 // ==/UserScript==
 
 // TODO: consider if run-at document-start is useful, and how we can
