@@ -69,12 +69,7 @@
       ct++;
     }
 
-    console.log('>>>');
-    console.log('Outbound redirects removed: ' + ct_out);
-    console.log('Inbound redirects removed: ' + ct_out);
-    console.log('Affiliate redirects removed: ' + ct_aff);
-    console.log('Total redirects removed: ' + ct);
-    console.log('<<<');
+    console.log('hijacks removed: outbound ' + ct_out + ', inbound ' + ct_in + ', affiliate ' + ct_aff + ', examined ' + ct);
   }
 
   var obs = new MutationObserver(function (r, self) {
@@ -95,3 +90,4 @@
   // TODO: consider blocking the recent_srs cookie used for tracking
   cl(document);
 }) ();
+
