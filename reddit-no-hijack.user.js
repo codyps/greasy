@@ -8,7 +8,8 @@
 // @namespace      https://github.com/jmesmon
 // @license        AGPL3
 // @supportURL	   https://github.com/jmesmon/greasy/issues
-// @run-at         document-start
+// @run-at         document-end
+// @version 0.0.1.20190518060813
 // ==/UserScript==
 
 // TODO: consider if run-at document-start is useful, and how we can
@@ -18,8 +19,8 @@
 (function () {
   'use strict';
   function cl(ac) {
-    var a = ac.querySelectorAll('a[data-href-url]');
-    var ct_out = 0, ct_aff = 0, ct = 0, ct_in;
+    var a = ac.querySelectorAll('a.outbound');
+    var ct_out = 0, ct_aff = 0, ct = 0, ct_in = 0;
     for (var i = 0; i < a.length; i++) {
       /*
       // This is reddit's function to determine the url, which is stored in `o`.
@@ -65,7 +66,7 @@
       // the condition quicker & cleans up the html, so do it.
       a[i].removeAttribute('data-outbound-expiration');
       a[i].removeAttribute('data-outbound-url');
-
+      a[i].classList.remove('outbound');
       ct++;
     }
 
@@ -87,11 +88,11 @@
     }
   });
   obs.observe(document, {
-    childList: true
+    childList: true,
+    subtree: true
   });
 
   // TODO: consider patching out window.navigator.sendBeacon (which reddit only uses for this link tracking)
   // TODO: consider blocking the recent_srs cookie used for tracking
   cl(document);
 }) ();
-
